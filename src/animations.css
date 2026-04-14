@@ -1,0 +1,155 @@
+/* ============================================================
+   ABRAR CATERERS — LIGHTWEIGHT MODERN ANIMATIONS
+   ============================================================ */
+
+/* ── 1. Reveal on scroll (base) ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.72s cubic-bezier(0.22,1,0.36,1),
+              transform 0.72s cubic-bezier(0.22,1,0.36,1);
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* Stagger children */
+.reveal:nth-child(2) { transition-delay: 0.08s; }
+.reveal:nth-child(3) { transition-delay: 0.16s; }
+.reveal:nth-child(4) { transition-delay: 0.24s; }
+.reveal:nth-child(5) { transition-delay: 0.32s; }
+.reveal:nth-child(6) { transition-delay: 0.40s; }
+
+/* ── 2. Gold shimmer on section labels ── */
+@keyframes goldShimmer {
+  0%,100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
+}
+.section-label {
+  background: linear-gradient(90deg, #c9973a, #e8c06a, #c9973a);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: goldShimmer 3.5s ease-in-out infinite;
+  display: inline-block;
+}
+
+/* ── 3. Card lift with gold glow ── */
+.service-card,
+.why-card,
+.testimonial-card,
+.mission-card {
+  transition: transform 0.42s cubic-bezier(0.22,1,0.36,1),
+              box-shadow 0.42s cubic-bezier(0.22,1,0.36,1),
+              border-color 0.42s ease;
+}
+.service-card:hover  { transform: translateY(-10px); box-shadow: 0 24px 60px rgba(201,151,58,0.18); }
+.why-card:hover      { transform: translateY(-8px);  box-shadow: 0 20px 50px rgba(201,151,58,0.15); }
+.testimonial-card:hover { transform: translateY(-6px); box-shadow: 0 16px 44px rgba(201,151,58,0.14); }
+.mission-card:hover  { transform: translateY(-8px);  box-shadow: 0 18px 48px rgba(201,151,58,0.15); }
+
+/* ── 4. Image zoom on hover ── */
+.service-card-img-wrap,
+.gp-item,
+.gallery-item,
+.about-img-wrap {
+  overflow: hidden;
+}
+.service-card-img { transition: transform 0.65s cubic-bezier(0.22,1,0.36,1); }
+.service-card:hover .service-card-img { transform: scale(1.07); }
+
+/* ── 5. Stat counter pulse ── */
+@keyframes statPop {
+  0%   { transform: scale(0.85); opacity: 0; }
+  60%  { transform: scale(1.06); opacity: 1; }
+  100% { transform: scale(1);    opacity: 1; }
+}
+.stat-item.visible { animation: statPop 0.55s cubic-bezier(0.34,1.56,0.64,1) both; }
+
+/* ── 6. Gold ornament draw-in ── */
+@keyframes drawLine {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+.gold-ornament-line,
+.orn-line::before,
+.orn-line::after {
+  animation: drawLine 0.8s cubic-bezier(0.22,1,0.36,1) both;
+  animation-play-state: paused;
+}
+.reveal.visible .gold-ornament-line { animation-play-state: running; }
+
+/* ── 7. Footer social hover spin ── */
+.social-btn { transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1), background 0.3s ease; }
+.social-btn:hover { transform: translateY(-4px) scale(1.15); }
+
+/* ── 8. Nav link slide-underline ── */
+.nav-links a::after {
+  transition: transform 0.32s cubic-bezier(0.22,1,0.36,1);
+  transform-origin: left;
+}
+
+/* ── 9. Button press feedback ── */
+.btn, .btn-hero-primary, .btn-hero-outline,
+.menu-tab, .filter-btn, .phone-popup-submit {
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.32s ease;
+}
+.btn:active, .btn-hero-primary:active, .btn-hero-outline:active,
+.menu-tab:active, .filter-btn:active, .phone-popup-submit:active {
+  transform: scale(0.96) !important;
+}
+
+/* ── 10. Page entrance fade ── */
+@keyframes pageEnter {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+body { animation: pageEnter 0.55s cubic-bezier(0.22,1,0.36,1) both; }
+
+/* ── 11. Gallery item reveal ── */
+.gallery-item {
+  transition: transform 0.42s cubic-bezier(0.22,1,0.36,1),
+              box-shadow 0.42s ease;
+}
+.gallery-item:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.3); }
+.gallery-item img { transition: transform 0.65s cubic-bezier(0.22,1,0.36,1); }
+.gallery-item:hover img { transform: scale(1.06); }
+
+/* ── 12. Menu item card slide ── */
+.menu-item-card {
+  transition: transform 0.38s cubic-bezier(0.22,1,0.36,1),
+              box-shadow 0.38s ease;
+}
+.menu-item-card:hover { transform: translateX(6px); box-shadow: 0 8px 32px rgba(201,151,58,0.12); }
+
+/* ── 13. Contact info item hover ── */
+.contact-info-item {
+  transition: background 0.28s ease, padding-left 0.28s ease;
+  border-radius: 10px;
+  padding-left: 0;
+}
+.contact-info-item:hover { background: rgba(201,151,58,0.06); padding-left: 8px; }
+
+/* ── 14. Service full-card image scale ── */
+.service-full-img {
+  transition: transform 0.6s cubic-bezier(0.22,1,0.36,1);
+}
+.service-full-card:hover .service-full-img { transform: scale(1.03); }
+
+/* ── 15. Scroll-triggered counter animation ── */
+@keyframes countUp { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+.stat-item strong { display: block; }
+.stat-item.visible strong { animation: countUp 0.5s ease both; }
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.1s !important;
+  }
+  .section-label {
+    background: none;
+    -webkit-text-fill-color: #c9973a;
+    color: #c9973a;
+    animation: none;
+  }
+}
