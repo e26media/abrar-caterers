@@ -6,6 +6,17 @@ const PhonePopup = ({ isOpen, onClose }) => {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
+  React.useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   const handleSubmit = () => {
     const isValid = /^\d{10}$/.test(phone);
     if (!isValid) {
@@ -18,7 +29,7 @@ const PhonePopup = ({ isOpen, onClose }) => {
   };
 
   return (
-    <div className={`phone-popup-overlay ${isOpen ? 'open' : ''} fixed inset-0 bg-[rgba(10,6,3,0.88)] z-[9999] flex items-center justify-center backdrop-blur-[10px] opacity-0 pointer-events-none transition-opacity duration-300 [&.open]:opacity-100 [&.open]:pointer-events-auto`} id="phone-popup-overlay">
+    <div className={`phone-popup-overlay ${isOpen ? 'open' : ''} fixed inset-0 bg-[rgba(10,6,3,0.88)] z-[9999] flex items-center justify-center overflow-y-auto backdrop-blur-[10px] opacity-0 pointer-events-none transition-opacity duration-300 [&.open]:opacity-100 [&.open]:pointer-events-auto`} id="phone-popup-overlay">
       <div className={`phone-popup bg-[var(--cream)] rounded-[var(--radius-xl)] p-[54px_48px] max-w-[460px] w-[92%] text-center relative shadow-[var(--shadow-heavy)] border border-[rgba(200,151,58,0.22)] transform translate-y-[40px] scale-[0.95] transition-all duration-400 ease-[cubic-bezier(0.34,1.56,0.64,1)] opacity-0 ${isOpen ? 'translate-y-0 scale-100 opacity-100' : ''}`}>
         <div className="absolute top-0 left-0 right-0 h-[4px] bg-gradient-to-r from-[var(--gold-dark)] via-[var(--gold)] to-[var(--gold-light)] rounded-t-[var(--radius-xl)]"></div>
         <button 

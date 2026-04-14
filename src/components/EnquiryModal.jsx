@@ -15,6 +15,18 @@ const EnquiryModal = ({ isOpen, onClose }) => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
+  React.useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+      // Prevent layout shift if possible (though scrollbar is hidden globally so maybe not needed)
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const message = `*New Enquiry from Website*%0A%0A` +
