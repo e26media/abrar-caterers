@@ -131,7 +131,7 @@ const About = () => {
             <div className="heritage-item reveal">
               <span className="heritage-label">Founder</span>
               <h3>BS Mohammed Basheer</h3>
-              <p>Founded with a passion for culinary excellence and authentic flavours. A visionary who laid the foundation of trust and quality that defines us today.</p>
+              <p>The founder of Abrar Caterers started this journey with determination, hard work, and a vision to serve people with quality food and reliable service. Through years of dedication and commitment, he built a reputation for trust, customer satisfaction, and excellence that continues to guide the company today.</p>
             </div>
             <div className="heritage-item reveal">
               <span className="heritage-label">Leadership</span>
