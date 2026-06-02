@@ -30,7 +30,7 @@ const Navbar = () => {
 <nav id="navbar" className={"navbar" + (scrolled ? " scrolled" : "")}>
   <div className="nav-inner">
     <Link to="/" onClick={closeMenu} className={"nav-logo " + (location.pathname === '/' ? 'active' : '')}>
-      <img src="assets/images/Logo.jpeg" className="nav-logo-main" alt="Abrar Caterers Logo" />
+      <img src="assets/images/Logo.png?v=4" className="nav-logo-main" alt="Abrar Caterers Logo" />
     </Link>
     <ul className={"nav-links " + (isOpen ? " open" : "")} id="navLinks">
       <li><Link to="/" onClick={closeMenu} className={location.pathname === '/' ? 'active' : ''}>Home</Link></li>

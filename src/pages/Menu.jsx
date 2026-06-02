@@ -168,7 +168,7 @@ const Menu = () => {
 
         <div className="menu-card">
           <div className="card-img-wrap">
-            <img src="assets/images/menu/Arabic Counter/chicken soup.jg" alt="Chicken Soup" loading="lazy" />
+            <img src="assets/images/menu/Arabic Counter/chicken soup.jpg" alt="Chicken Soup" loading="lazy" />
           </div>
           <div className="card-body">
             <div className="card-number">04 &nbsp;/&nbsp; Arabic</div>

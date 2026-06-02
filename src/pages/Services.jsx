@@ -79,7 +79,7 @@ const Services = () => {
           {/* Wedding */}
           <div className="service-block reveal">
             <div className="service-img-wrap">
-              <img src="/assets/images/WhatsApp Image 2026-03-16 at 11.41.20 AM  live food counter.jpeg" alt="Wedding Catering" />
+              <img src="/assets/images/WhatsApp Image 2026-03-16 at 11.41.20 AM  live food counter.jpg" alt="Wedding Catering" />
             </div>
             <div className="service-body">
               <div className="service-number">01 &nbsp;/&nbsp; Services</div>
@@ -101,7 +101,7 @@ const Services = () => {
           {/* Birthday */}
           <div className="service-block reverse reveal">
             <div className="service-img-wrap">
-              <img src="/assets/images/WhatsApp Image 2026-03-16 at 11.40.42 AM conference and seminar.jpeg" alt="Birthday Party Catering" />
+              <img src="/assets/images/WhatsApp Image 2026-03-16 at 11.40.42 AM conference and seminar.jpg" alt="Birthday Party Catering" />
             </div>
             <div className="service-body">
               <div className="service-number">02 &nbsp;/&nbsp; Services</div>

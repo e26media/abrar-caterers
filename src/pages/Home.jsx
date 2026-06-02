@@ -177,7 +177,7 @@ const Home = () => {
           <div className="services-grid">
             <div className="service-card reveal">
               <div className="service-card-img-wrap">
-                <img src="assets/images/WhatsApp Image 2026-03-16 at 11.41.20 AM  live food counter.jpeg" alt="Wedding Catering" className="service-card-img" />
+                <img src="assets/images/WhatsApp Image 2026-03-16 at 11.41.20 AM  live food counter.jpg" alt="Wedding Catering" className="service-card-img" />
               </div>
               <div className="service-card-body">
                 <div className="service-icon"><i className="fas fa-ring" style={{color: "var(--gold-light)"}}></i></div>
@@ -187,7 +187,7 @@ const Home = () => {
             </div>
             <div className="service-card reveal">
               <div className="service-card-img-wrap">
-                <img src="assets/images/WhatsApp Image 2026-03-16 at 11.40.42 AM conference and seminar.jpeg" alt="Birthday Parties" className="service-card-img" />
+                <img src="assets/images/WhatsApp Image 2026-03-16 at 11.40.42 AM conference and seminar.jpg" alt="Birthday Parties" className="service-card-img" />
               </div>
               <div className="service-card-body">
                 <div className="service-icon"><i className="fas fa-birthday-cake" style={{color: "var(--gold-light)"}}></i></div>
@@ -299,11 +299,11 @@ const Home = () => {
           </div>
           <div className="gallery-preview-grid">
             <div className="gp-item reveal">
-              <img src="assets/images/WhatsApp Image 2026-03-16 at 11.40.42 AM conference and seminar.jpeg" alt="Conference setup" />
+              <img src="assets/images/WhatsApp Image 2026-03-16 at 11.40.42 AM conference and seminar.jpg" alt="Conference setup" />
               <div className="gp-overlay"><i className="fas fa-plus"></i></div>
             </div>
             <div className="gp-item reveal">
-              <img src="assets/images/WhatsApp Image 2026-03-16 at 11.41.20 AM  live food counter.jpeg" alt="Live food counter" />
+              <img src="assets/images/WhatsApp Image 2026-03-16 at 11.41.20 AM  live food counter.jpg" alt="Live food counter" />
               <div className="gp-overlay"><i className="fas fa-plus"></i></div>
             </div>
             <div className="gp-item reveal">

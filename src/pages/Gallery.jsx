@@ -26,7 +26,7 @@ const Gallery = () => {
     {
       id: 3,
       cat: 'food',
-      src: 'assets/images/WhatsApp Image 2026-03-16 at 11.41.20 AM  live food counter.jpeg',
+      src: 'assets/images/WhatsApp Image 2026-03-16 at 11.41.20 AM  live food counter.jpg',
       caption: 'Live Food Counter',
       label: 'Food & Dishes'
     },
@@ -47,7 +47,7 @@ const Gallery = () => {
     {
       id: 6,
       cat: 'corporate',
-      src: 'assets/images/WhatsApp Image 2026-03-16 at 11.40.42 AM conference and seminar.jpeg',
+      src: 'assets/images/WhatsApp Image 2026-03-16 at 11.40.42 AM conference and seminar.jpg',
       caption: 'Conference & Seminar',
       label: 'Corporate Events'
     },
@@ -61,7 +61,7 @@ const Gallery = () => {
     {
       id: 8,
       cat: 'birthday',
-      src: 'assets/images/WhatsApp Image 2026-03-16 at 11.40.42 AM conference and seminar.jpeg',
+      src: 'assets/images/WhatsApp Image 2026-03-16 at 11.40.42 AM conference and seminar.jpg',
       caption: 'Birthday Party Setup',
       label: 'Birthday Parties'
     },

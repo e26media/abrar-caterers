@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="footer-grid">
       <div className="footer-brand">
         <Link to="/" className="nav-logo">
-          <img src="assets/images/Logo.jpeg" className="nav-logo-main" alt="Abrar Caterers Logo" />
+          <img src="assets/images/Logo.png?v=4" className="nav-logo-main" alt="Abrar Caterers Logo" />
           <span className="nav-logo-sub">Bolar · Mangalore</span>
         </Link>
         <p>A trusted name in catering across Mangalore. Quality food, expert chefs, and warm hospitality for every occasion.</p>

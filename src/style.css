@@ -164,11 +164,13 @@ p { font-size: clamp(0.9rem, 1vw + 0.5rem, 1rem); color: var(--text-mid); }
   max-width: 1200px;
   margin: 0 auto;
 }
-.nav-logo { display: flex; flex-direction: column; line-height: 1; }
+.nav-logo { display: flex; flex-direction: column; line-height: 1; background: transparent; }
 .nav-logo-main {
   max-height: 50px;
   width: auto;
   object-fit: contain;
+  background: transparent;
+  display: block;
 }
 .nav-logo-sub {
   font-size: 0.66rem;
